@@ -1,0 +1,71 @@
+* { box-sizing: border-box; }
+body {
+	background: #000;
+	color: #fff;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+#container {
+	margin: auto;
+	position: relative;
+	width: 640px;
+}
+#container a  {
+	color: #fff;
+	display: inline-block;
+	font-size: 13px;
+}
+#container a:hover {
+	color: #ddd;
+}
+#container a.stop {
+	font-weight: bold;
+}
+#container a.twitter {
+	color: #00ACEE;
+	margin-top: .5em;
+}
+#container a.fuckingjavascript {
+	display: block;
+	font-size: 2px;
+	text-decoration: none;
+}
+h1 {
+	margin: .5em 0;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+}
+canvas {
+	display: block;
+	height: 320px;
+	margin: 0 auto;
+	width: 640px;
+}
+input[type=file] {
+	color: #000;
+	margin: 0;
+}
+ul {
+	color: #fff;
+	list-style-type: none;
+	margin: .5em 0 0 0;
+	padding: 0;
+}
+ul li {
+	font-size: 13px;
+	margin: 0 5px 0 0;
+}
+
+#webaudioapi, #safari {
+	color: rgb(255,64,64);
+	display: none;
+}
+#webaudioapi.visible, #safari.visible {
+	display: block;
+}
+
+#options {
+	float: right;
+	font-size: 13px;
+	margin: .5em 0 0 0;
+	text-align: right;
+}

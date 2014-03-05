@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Audiovis</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="raf.js"></script> <!-- Compatibility stuff for requestAnimationFrame -->
+		<script src="audiovis.js"></script>
+	</head>
+	<body>
+		<audio autoplay></audio>
+		<div id="container">
+			<h1>Web Audio API Adventures</h1>
+			<canvas></canvas>
+			<div id="options">
+				<label for="mic">Enable microphone input</label>
+				<input type="checkbox" id="mic" />
+			</div>
+			<ul>
+				<li>Examples:
+				<li><a class="ex" href="#" data-audio="http://tbspace.de/content/files/modem.mp3">Modem dialup</a>
+				<li><a class="ex" href="#" data-audio="http://i.peterwunder.de/audiovis/dubslide.mp3">Covox - Dubslide</a>
+				<li><a class="ex" href="#" data-audio="http://i.peterwunder.de/audiovis/youwillbeperfect.mp3">Aperture Science Psychoacoustics Laboratory - You Will Be Perfect</a>
+				<li>—
+				<li id="nowplaying">Now playing: </li>
+				<li>—
+				<li>Play an audio file from your computer: <input type="file" id="fileinput" />
+				<li id="supportedformats">Your browser <a href="http://html5doctor.com/html5-audio-the-state-of-play/#canPlayType" target="_blank">probably</a> supports these formats: </li>
+				<li id="webaudioapi">Sadly, it doesn't support the Web Audio API. Try Chrome.</li>
+				<li id="safari">Safari doesn't actually support the Web Audio API. Use Chrome.</li>
+				<li>—
+				<li><a class="stop" href="#">Stop Playback</a>
+			</ul>
+			
+			<a class="twitter" href="https://twitter.com/SamusAranX" target="_blank">@SamusAranX</a>
+			<a class="fuckingjavascript" href="https://twitter.com/SamusAranX/status/440503385956311040">fucking javascript</a>
+		</div>
+	</body>
+</html>
